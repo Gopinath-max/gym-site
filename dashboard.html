@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Client Portal | IRONCLAD BUILD GROUP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;600&family=JetBrains+Mono&family=Oswald:wght@400;700;900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar__header">
+      <div class="sidebar__logo-main">IRONCLAD</div>
+      <div class="sidebar__logo-sub tracking-widest">PROJECT PORTAL</div>
+    </div>
+    
+    <div class="sidebar__user">
+      <div class="sidebar__avatar">Q</div>
+      <div class="flex-col">
+        <span class="font-heading text-small color-chrome uppercase">Queensway House</span>
+        <span class="font-mono text-label color-muted">1 Active Project</span>
+      </div>
+    </div>
+
+    <nav class="sidebar__nav">
+      <a href="#" class="sidebar__link active">Dashboard</a>
+      <a href="#" class="sidebar__link">My Projects</a>
+      <a href="#" class="sidebar__link">Documents</a>
+      <a href="#" class="sidebar__link">Programme</a>
+      <a href="#" class="sidebar__link">Financials</a>
+      <a href="#" class="sidebar__link color-amber" style="font-weight:bold;">⚙️ FORGE AI</a>
+      <a href="#" class="sidebar__link">Site Reports</a>
+      <a href="#" class="sidebar__link">Defects</a>
+    </nav>
+    
+    <div class="sidebar__footer">
+      <a href="index.html" class="sidebar__link" style="color:var(--color-rust); font-family:var(--font-mono); font-size:12px;">Sign Out</a>
+    </div>
+  </aside>
+
+  <!-- MAIN AREA -->
+  <main class="main-content">
+    <header class="main-header">
+      <h1 class="font-display text-headline">QUEENSWAY HOUSE FIT-OUT</h1>
+      <span class="chip" style="background:var(--color-lime-dim); color:var(--color-lime); border-color:var(--color-lime);">ON PROGRAMME</span>
+    </header>
+
+    <div class="dashboard-grid">
+      <!-- 1. PROJECT OVERVIEW -->
+      <div class="db-widget db-overview">
+        <h2 class="db-widget__title">Project Snapshot</h2>
+        <div style="display:grid; grid-template-columns:repeat(4, 1fr); gap:24px; margin-bottom:24px;">
+          <div><h4 class="font-mono text-small color-muted mb-2">Contract Value</h4><p class="font-display text-title color-blue">£4,250,000</p></div>
+          <div><h4 class="font-mono text-small color-muted mb-2">Start Date</h4><p class="font-mono text-body color-chrome">14 Oct 2023</p></div>
+          <div><h4 class="font-mono text-small color-muted mb-2">Target Completion</h4><p class="font-mono text-body color-chrome">28 May 2024</p></div>
+          <div><h4 class="font-mono text-small color-muted mb-2">Programme %</h4><p class="font-display text-title color-lime">64%</p></div>
+        </div>
+        <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 64%;"></div></div>
+        <div class="flex gap-4 mt-6">
+          <button class="btn btn-blue" style="font-size:12px;">View Drawings</button>
+          <button class="btn btn-ghost" style="font-size:12px;">Contact PM</button>
+        </div>
+      </div>
+
+      <!-- 2. PROGRAMME STATUS -->
+      <div class="db-widget db-programme">
+        <h2 class="db-widget__title">Programme Status</h2>
+        <p class="font-body text-small color-chrome mb-4"><strong class="color-lime">14 weeks</strong> to Practical Completion.</p>
+        <div class="p-4 bg-void border">
+           <span class="font-mono text-small color-amber">Upcoming Milestone</span>
+           <h4 class="font-heading text-title color-chrome mt-2">MEP First Fix Complete</h4>
+           <p class="font-mono text-small color-muted mt-2">Due: 24 Feb 2024</p>
+        </div>
+      </div>
+
+      <!-- 3. FINANCIALS -->
+      <div class="db-widget db-financial">
+        <h2 class="db-widget__title">Financial Summary</h2>
+        <table class="db-table mb-4">
+          <tr><td>Original Contract Sum</td><td class="font-mono color-chrome" style="text-align:right;">£4,000,000</td></tr>
+          <tr><td>Approved Variations (4)</td><td class="font-mono color-rust" style="text-align:right;">+ £250,000</td></tr>
+          <tr style="border-top:1px solid var(--color-border);"><td style="font-weight:bold;">Current Contract Value</td><td class="font-mono color-blue" style="text-align:right; font-weight:bold;">£4,250,000</td></tr>
+          <tr><td>Certified to Date</td><td class="font-mono color-lime" style="text-align:right;">£2,720,000</td></tr>
+        </table>
+        <button class="btn btn-ghost w-full mb-2" style="font-size:11px;">Valuation 04 Approved (01 Feb)</button>
+      </div>
+
+      <!-- 4. FORGE AI INSIGHT -->
+      <div class="db-widget db-forge">
+         <h2 class="db-widget__title"><span class="color-blue font-mono font-bold" style="font-size:14px;">⚙️ FORGE AI INTELLIGENCE BRIEF</span></h2>
+         <div class="p-6 bg-void border-blueprint mt-4">
+            <p class="font-body text-body color-chrome">"The Queensway Fit-Out project is currently tracking <strong class="color-lime">on schedule</strong>. Based on BCIS analytics and site reports, MEP first fix is accelerating. I have noted a minor supply chain risk flagged on specified architectural bulkheads. The procurement team has initiated secondary supplier sourcing."</p>
+            <div class="flex gap-2 mt-4"><span class="chip" style="font-size:10px;">Ask FORGE about MEP</span><span class="chip" style="font-size:10px;">Analyse Financials</span></div>
+         </div>
+      </div>
+
+      <!-- 5. DOCUMENTS -->
+      <div class="db-widget db-docs">
+        <h2 class="db-widget__title">Recent Documents</h2>
+        <table class="db-table">
+          <thead><tr><th>DOCUMENT</th><th>TYPE</th><th>DATE</th><th>ACTION</th></tr></thead>
+          <tbody>
+            <tr><td>A-201_RevC_GA_Plan.pdf</td><td>Drawing</td><td>10 Feb</td><td><button class="btn-amber" style="padding:4px 8px; font-size:10px;">View</button></td></tr>
+            <tr><td>Valuation_04_Certified.pdf</td><td>Financial</td><td>01 Feb</td><td><button class="btn-amber" style="padding:4px 8px; font-size:10px;">View</button></td></tr>
+            <tr><td>Site_Report_Week_16.pdf</td><td>Report</td><td>28 Jan</td><td><button class="btn-amber" style="padding:4px 8px; font-size:10px;">View</button></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </main>
+</body>
+</html>

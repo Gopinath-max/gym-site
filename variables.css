@@ -1,0 +1,82 @@
+/* css/variables.css */
+:root {
+  /* COLOR SYSTEM */
+  --color-void: #0C0C0C;
+  --color-concrete: #1E1E1E;
+  --color-steel: #2D2D2D;
+  --color-plate: #3A3A3A;
+  --color-border: #404040;
+  --color-border-active: #0055FF;
+  --color-blue: #0055FF;
+  --color-blue-dim: #0040CC;
+  --color-blue-glow: rgba(0, 85, 255, 0.12);
+  --color-amber: #FF8C00;
+  --color-amber-dim: rgba(255, 140, 0, 0.15);
+  --color-rust: #C44B1E;
+  --color-lime: #A8C800;
+  --color-lime-dim: rgba(168, 200, 0, 0.1);
+  --color-chrome: #F0EDE8;
+  --color-muted: #888888;
+  --color-faint: #555555;
+  --color-overlay: rgba(12, 12, 12, 0.94);
+  --color-glass: rgba(30, 30, 30, 0.85);
+
+  /* TYPOGRAPHY */
+  --font-display: 'Oswald', sans-serif;
+  --font-heading: 'Barlow Semi Condensed', sans-serif;
+  --font-body: 'Source Serif 4', serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* FLUID TYPE SCALE */
+  --text-mega: clamp(72px, 14vw, 180px);
+  --text-display: clamp(48px, 7vw, 96px);
+  --text-headline: clamp(32px, 4.5vw, 64px);
+  --text-title: clamp(22px, 3vw, 36px);
+  --text-subtitle: clamp(17px, 2vw, 22px);
+  --text-body: clamp(15px, 1.4vw, 17px);
+  --text-small: clamp(12px, 1vw, 14px);
+  --text-label: clamp(10px, 0.8vw, 11px);
+
+  /* SPACING SCALE */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-24: 96px;
+  --section-pad: clamp(64px, 10vw, 140px);
+  --container-max: 1440px;
+  --container-pad: clamp(20px, 5vw, 80px);
+  --grid-gap: clamp(16px, 2vw, 32px);
+
+  /* EFFECTS */
+  --shadow-blue: 0 0 40px rgba(0, 85, 255, 0.25);
+  --shadow-amber: 0 0 30px rgba(255, 140, 0, 0.2);
+  --shadow-deep: 0 8px 48px rgba(0, 0, 0, 0.7);
+  --shadow-blueprint: inset 0 0 0 1px rgba(0, 85, 255, 0.3);
+  --texture-concrete: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.08'/%3E%3C/svg%3E");
+  --border-blueprint: 1px solid rgba(0, 85, 255, 0.4);
+
+  /* TRANSITIONS */
+  --ease-iron: cubic-bezier(0.19, 1, 0.22, 1);
+  --ease-snap: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-heavy: cubic-bezier(0.4, 0, 0.2, 1);
+  --duration-instant: 100ms;
+  --duration-fast: 200ms;
+  --duration-base: 350ms;
+  --duration-slow: 700ms;
+  --duration-crawl: 1200ms;
+
+  /* Z-INDEX */
+  --z-base: 1;
+  --z-raised: 10;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-overlay: 500;
+  --z-modal: 600;
+  --z-toast: 700;
+  --z-cursor: 9999;
+}

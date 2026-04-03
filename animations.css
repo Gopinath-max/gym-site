@@ -1,0 +1,80 @@
+/* css/animations.css */
+
+@keyframes blueprint-scroll {
+  from { background-position-y: 0; }
+  to { background-position-y: 60px; }
+}
+
+@keyframes scanline {
+  0% { top: -2px; opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { top: 100%; opacity: 0; }
+}
+
+@keyframes forge-pulse {
+  0% { box-shadow: 0 0 0 0 rgba(0, 85, 255, 0.4); }
+  70% { box-shadow: 0 0 0 20px rgba(0, 85, 255, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(0, 85, 255, 0); }
+}
+
+@keyframes amber-pulse {
+  0% { box-shadow: 0 0 0 0 rgba(255, 140, 0, 0.4); }
+  70% { box-shadow: 0 0 0 15px rgba(255, 140, 0, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(255, 140, 0, 0); }
+}
+
+@keyframes drawLine {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+
+@keyframes drawLineVertical {
+  from { transform: scaleY(0); }
+  to { transform: scaleY(1); }
+}
+
+@keyframes stampIn {
+  0% { transform: scale(1.5); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes countUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes marqueeBelt {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@keyframes fadeInRight {
+  from { opacity: 0; transform: translateX(20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+/* UTILITIES */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all var(--duration-slow) var(--ease-iron);
+}
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.animate-stamp.visible {
+  animation: stampIn 0.5s var(--ease-heavy) forwards;
+}
+
+.stagger-1 { transition-delay: 100ms; }
+.stagger-2 { transition-delay: 200ms; }
+.stagger-3 { transition-delay: 300ms; }
+.stagger-4 { transition-delay: 400ms; }
+
+/* HOVER UTILITIES */
+.hover-blue-glow:hover { box-shadow: var(--shadow-blue); }
+.hover-amber-glow:hover { box-shadow: var(--shadow-amber); }
+.hover-lift-heavy:hover { transform: translateY(-6px); box-shadow: var(--shadow-deep); }
