@@ -1,0 +1,41 @@
+{
+  "starter": {
+    "name": "STARTER",
+    "monthly": 29,
+    "features": [
+      { "name": "24/7 Gym Access", "included": true },
+      { "name": "Basic App Access", "included": true },
+      { "name": "Community Forums", "included": true },
+      { "name": "AI Workout Generation", "included": false },
+      { "name": "Nutrition Planner", "included": false },
+      { "name": "Personal Training", "included": false },
+      { "name": "Recovery Suite", "included": false }
+    ]
+  },
+  "warrior": {
+    "name": "WARRIOR",
+    "monthly": 59,
+    "features": [
+      { "name": "24/7 Gym Access", "included": true },
+      { "name": "Premium App Access", "included": true },
+      { "name": "Community Forums", "included": true },
+      { "name": "AI Workout Generation", "included": true },
+      { "name": "Nutrition Planner", "included": true },
+      { "name": "2 PT Sessions/Mo", "included": true },
+      { "name": "Recovery Suite", "included": false }
+    ]
+  },
+  "elite": {
+    "name": "ELITE",
+    "monthly": 99,
+    "features": [
+      { "name": "24/7 Gym Access", "included": true },
+      { "name": "Premium App Access", "included": true },
+      { "name": "Community Forums", "included": true },
+      { "name": "AI Workout Generation", "included": true },
+      { "name": "Nutrition Planner", "included": true },
+      { "name": "Unlimited PT Sessions", "included": true },
+      { "name": "Recovery Suite Access", "included": true }
+    ]
+  }
+}

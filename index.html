@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080808">
+  <title>AntiGravity | Defy Your Limits</title>
+  
+  <meta property="og:title" content="AntiGravity Gym">
+  <meta property="og:description" content="AI-Powered Training. Unbreakable Results.">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SportsActivityLocation",
+    "name": "AntiGravity Gym",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "77 Core Ave",
+      "addressLocality": "Metropolis",
+      "postalCode": "10001",
+      "addressCountry": "US"
+    },
+    "openingHours": "Mo-Su 00:00-24:00"
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,700;1,400;1,700&family=Bebas+Neue&family=IBM+Plex+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,700;1,6..12,400;1,6..12,700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/typography.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- JS -->
+  <script type="module" src="js/ai-agent.js" defer></script>
+  <script type="module" src="js/workout-planner.js" defer></script>
+  <script type="module" src="js/nutrition.js" defer></script>
+  <script type="module" src="js/progress-tracker.js" defer></script>
+  <script type="module" src="js/membership.js" defer></script>
+  <script type="module" src="js/animations.js" defer></script>
+  <script type="module" src="js/main.js" defer></script>
+</head>
+<body>
+
+  <!-- Page Loader -->
+  <div class="page-intro">
+    <h1><span class="color-chrome">ANTI</span><span class="color-red">GRAVITY</span></h1>
+  </div>
+
+  <div class="scroll-progress"></div>
+
+  <!-- NAVIGATION -->
+  <nav class="nav">
+    <a href="#" class="nav__logo"><span class="color-chrome">ANTI</span><span class="color-red">GRAVITY</span></a>
+    
+    <div class="nav__links">
+      <a href="#hero" class="nav__link">Home</a>
+      <a href="#programs" class="nav__link">Programs</a>
+      <a href="#trainers" class="nav__link">Trainers</a>
+      <a href="#pricing" class="nav__link">Pricing</a>
+      <a href="dashboard.html" class="nav__link color-green">Members</a>
+    </div>
+
+    <div class="nav__actions">
+      <a href="dashboard.html" style="font-family:var(--font-heading); text-transform:uppercase;">Login</a>
+      <a href="#pricing" class="nav__cta-primary">Start Free Trial</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="nav__links-mobile">
+    <a href="#hero">Home</a>
+    <a href="#programs">Programs</a>
+    <a href="#trainers">Trainers</a>
+    <a href="#pricing">Pricing</a>
+    <a href="dashboard.html" class="color-green">Members</a>
+    <a href="#pricing" class="color-red" style="margin-top:20px;">Start Free Trial</a>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <div class="hero__grid"></div>
+    <div class="hero__particles">
+      <!-- Generated particles simulating CSS float -->
+      <div class="hero__particle" style="top:20%; left:30%; animation: particle-float 8s infinite;"></div>
+      <div class="hero__particle" style="top:60%; left:70%; animation: particle-float 12s infinite 2s;"></div>
+      <div class="hero__particle" style="top:40%; left:80%; animation: particle-float 15s infinite 1s;"></div>
+    </div>
+    <div class="hero__glow"></div>
+    
+    <div class="hero__content container">
+      <h1 class="hero__mega animate-scale">
+        DEFY<span>YOUR LIMITS</span>
+      </h1>
+      <p class="hero__sub animate-left">AI-POWERED TRAINING. UNBREAKABLE RESULTS.</p>
+      
+      <div class="hero__stats animate-on-scroll">
+        <div class="hero__stat"><span class="hero__stat-num">2,400+</span><span class="hero__stat-label">Members</span></div>
+        <div class="hero__stat-divider"></div>
+        <div class="hero__stat"><span class="hero__stat-num">98%</span><span class="hero__stat-label">Retention</span></div>
+        <div class="hero__stat-divider"></div>
+        <div class="hero__stat"><span class="hero__stat-num">15</span><span class="hero__stat-label">Elite Trainers</span></div>
+        <div class="hero__stat-divider"></div>
+        <div class="hero__stat"><span class="hero__stat-num">24/7</span><span class="hero__stat-label">Access</span></div>
+      </div>
+
+      <div class="hero__cta-group animate-on-scroll">
+        <a href="#pricing" class="btn-primary hover-lift">Begin Training</a>
+        <a href="#programs" class="btn-ghost hover-lift">Watch Methodology</a>
+      </div>
+    </div>
+
+    <div class="apex-teaser" onclick="document.querySelector('.apex-fab').click()">
+      <div class="apex-teaser__pulse"></div>
+      Ask APEX — Your AI Trainer
+    </div>
+
+    <div class="hero__slash"></div>
+  </section>
+
+  <!-- APEX SECTION -->
+  <section id="apex" class="apex-section container split-layout" style="margin-top: 100px;">
+    <div class="animate-left">
+      <div style="background:var(--color-surface); padding:var(--space-6); border:1px solid var(--color-border); border-radius:var(--radius-base); box-shadow:var(--shadow-float);">
+        <div class="flex-between mb-4" style="margin-bottom:var(--space-4);">
+          <span class="text-label color-red">INTERNAL // TERMINAL</span>
+          <span style="color:var(--color-green);">⏺ REC</span>
+        </div>
+        <p class="font-mono text-small color-chrome mb-4">User: "I want to build muscle in 90 days"</p>
+        <p class="font-mono text-small color-green pb-4">APEX: "Analyzing your profile... Generating 12-week hypertrophy program based on progressive overload."</p>
+        <div style="display:flex; gap:8px; flex-wrap:wrap; margin-top:var(--space-4); border-top:1px solid var(--color-border); padding-top:var(--space-4);">
+          <span class="chip" style="font-size:10px;">Workout Plans</span>
+          <span class="chip" style="font-size:10px;">Nutrition</span>
+          <span class="chip" style="font-size:10px;">Recovery</span>
+          <span class="chip" style="font-size:10px;">Progress Tracking</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="animate-right flex-col gap-6">
+      <div>
+        <p class="text-label color-red">MEET APEX</p>
+        <h2 class="text-headline">Your Personal AI<br>Training Intelligence</h2>
+      </div>
+      
+      <div style="background:var(--color-surface-2); padding:var(--space-4); border-left:2px solid var(--color-red);">
+        <h4 class="text-subtitle font-heading uppercase text-title">Adaptive Programming</h4>
+        <p class="text-body color-muted">Adjusts weekly volume and intensity based on your tracked performance.</p>
+      </div>
+
+      <div style="background:var(--color-surface-2); padding:var(--space-4); border-left:2px solid var(--color-green);">
+        <h4 class="text-subtitle font-heading uppercase text-title">Nutrition Intelligence</h4>
+        <p class="text-body color-muted">Calculates exact macro splits and generates daily meal suggestions.</p>
+      </div>
+
+      <div style="background:var(--color-surface-2); padding:var(--space-4); border-left:2px solid var(--color-chrome);">
+        <h4 class="text-subtitle font-heading uppercase text-title">Recovery Optimizer</h4>
+        <p class="text-body color-muted">Analyzes sleep data to suggest rest days and prevent injury.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRAMS SECTION -->
+  <section id="programs" class="programs container">
+    <div class="animate-on-scroll">
+      <p class="text-label color-red">CURRICULUM</p>
+      <h2 class="text-headline">Train With Purpose</h2>
+    </div>
+
+    <div class="programs__grid animate-on-scroll stagger-1">
+      <div class="program-card">
+        <div class="program-card__badge badge-high">HIGH INTENSITY</div>
+        <svg class="program-card__icon" viewBox="0 0 24 24"><path d="M12 2L2 22h20L12 2zm0 4.5l6.5 13.5h-13L12 6.5z"/></svg>
+        <h3 class="program-card__title text-title font-heading uppercase">FORGE</h3>
+        <p class="text-small color-muted font-mono mb-2">Duration: 12 Weeks</p>
+        <p class="program-card__desc text-body">Pure strength and powerlifting mechanics. Build an unbreakable foundation.</p>
+        <button class="program-card__ai-btn">⚡ APEX Match</button>
+      </div>
+
+      <div class="program-card">
+        <div class="program-card__badge badge-high">HIGH INTENSITY</div>
+        <svg class="program-card__icon" viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        <h3 class="program-card__title text-title font-heading uppercase">IGNITE</h3>
+        <p class="text-small color-muted font-mono mb-2">Duration: 8 Weeks</p>
+        <p class="program-card__desc text-body">Metabolic conditioning and HIIT intervals designed to maximize fat burn.</p>
+        <button class="program-card__ai-btn">⚡ APEX Match</button>
+      </div>
+
+      <div class="program-card">
+        <div class="program-card__badge badge-med">MED INTENSITY</div>
+        <svg class="program-card__icon" viewBox="0 0 24 24"><path d="M12 22c5.52 0 10-4.48 10-10S17.52 2 12 2 2 6.48 2 12s4.48 10 10 10zm0-18c4.41 0 8 3.59 8 8s-3.59 8-8 8-8-3.59-8-8 3.59-8 8-8z"/></svg>
+        <h3 class="program-card__title text-title font-heading uppercase">SCULPT</h3>
+        <p class="text-small color-muted font-mono mb-2">Duration: 12 Weeks</p>
+        <p class="program-card__desc text-body">Body recomposition. Muscle isolation and precise time-under-tension.</p>
+        <button class="program-card__ai-btn">⚡ APEX Match</button>
+      </div>
+
+      <div class="program-card">
+        <div class="program-card__badge badge-high">HIGH INTENSITY</div>
+        <svg class="program-card__icon" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 9h-2V7h-2v5H6v2h2v5h2v-5h2v-2z"/></svg>
+        <h3 class="program-card__title text-title font-heading uppercase">ENDURE</h3>
+        <p class="text-small color-muted font-mono mb-2">Duration: 10 Weeks</p>
+        <p class="program-card__desc text-body">Athletic performance training for hybrid athletes and marathon preppers.</p>
+        <button class="program-card__ai-btn">⚡ APEX Match</button>
+      </div>
+
+      <div class="program-card">
+        <div class="program-card__badge badge-med">MED INTENSITY</div>
+        <svg class="program-card__icon" viewBox="0 0 24 24"><path d="M21 3H3v18h18V3zm-2 16H5V5h14v14z"/></svg>
+        <h3 class="program-card__title text-title font-heading uppercase">ELEVATE</h3>
+        <p class="text-small color-muted font-mono mb-2">Duration: 12 Weeks</p>
+        <p class="program-card__desc text-body">Functional fitness focusing on real world strength and mobility.</p>
+        <button class="program-card__ai-btn">⚡ APEX Match</button>
+      </div>
+
+      <div class="program-card">
+        <div class="program-card__badge badge-low">LOW INTENSITY</div>
+        <svg class="program-card__icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+        <h3 class="program-card__title text-title font-heading uppercase">RESTORE</h3>
+        <p class="text-small color-muted font-mono mb-2">Duration: 4 Weeks</p>
+        <p class="program-card__desc text-body">Mobility, deep stretching, and active recovery protocols.</p>
+        <button class="program-card__ai-btn">⚡ APEX Match</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI WORKOUT GENERATOR -->
+  <section id="workout-gen" class="workout-gen">
+    <div class="container animate-on-scroll">
+      <h2 class="text-headline mb-8 text-center" style="margin-bottom:var(--space-8); text-align:center;">Generate Your Custom Workout</h2>
+      
+      <div class="wg__steps">
+        <div class="wg__step-indicator complete">1</div>
+        <div class="wg__step-indicator complete">2</div>
+        <div class="wg__step-indicator complete">3</div>
+        <div class="wg__step-indicator complete">4</div>
+        <div class="wg__step-indicator complete">5</div>
+      </div>
+
+      <div class="wg__step-content active">
+        <h4 class="text-title font-heading mb-4">Step 1 / Select Goal</h4>
+        <div class="chip-group" data-group="goal">
+          <button class="chip selected" data-value="Build Muscle">Build Muscle</button>
+          <button class="chip" data-value="Lose Fat">Lose Fat</button>
+          <button class="chip" data-value="Strength">Increase Strength</button>
+          <button class="chip" data-value="Endurance">Improve Endurance</button>
+          <button class="chip" data-value="Athletic">Athletic Performance</button>
+        </div>
+        
+        <h4 class="text-title font-heading mb-4" style="margin-top:var(--space-6);">Step 2 / Level</h4>
+        <div class="chip-group" data-group="level">
+          <button class="chip" data-value="Beginner">Beginner</button>
+          <button class="chip selected" data-value="Intermediate">Intermediate</button>
+          <button class="chip" data-value="Advanced">Advanced</button>
+          <button class="chip" data-value="Elite">Elite</button>
+        </div>
+
+        <h4 class="text-title font-heading mb-4" style="margin-top:var(--space-6);">Step 3 / Equipment</h4>
+        <div class="chip-group" data-group="equipment">
+          <button class="chip selected" data-value="Full Gym">Full Gym</button>
+          <button class="chip" data-value="Home Gym">Home Gym</button>
+          <button class="chip" data-value="Minimal">Minimal</button>
+          <button class="chip" data-value="Bodyweight">Bodyweight Only</button>
+        </div>
+
+        <h4 class="text-title font-heading mb-4" style="margin-top:var(--space-6);">Step 4 / Focus Area</h4>
+        <div class="chip-group" data-group="focus">
+          <button class="chip selected" data-value="Full Body">Full Body</button>
+          <button class="chip" data-value="Upper">Upper</button>
+          <button class="chip" data-value="Lower">Lower</button>
+          <button class="chip" data-value="Push">Push</button>
+          <button class="chip" data-value="Pull">Pull</button>
+        </div>
+
+        <button class="wg__btn-generate">Generate With APEX</button>
+      </div>
+
+      <div id="workout-result" class="workout-result"></div>
+    </div>
+  </section>
+
+  <!-- TRAINERS -->
+  <section id="trainers" class="trainers container">
+    <div class="animate-on-scroll" style="margin-bottom:var(--space-8);">
+      <p class="text-label color-red">PERSONNEL</p>
+      <h2 class="text-headline">Elite Coaching Staff</h2>
+    </div>
+
+    <div style="display:grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap:var(--space-4);" class="animate-on-scroll stagger-1">
+      <div class="trainer-card">
+        <div class="trainer-card__photo">MC</div>
+        <div class="trainer-card__info">
+          <h3 class="text-title font-display">Marcus Chen</h3>
+          <p class="text-label color-muted">Powerlifting</p>
+          <div class="trainer-card__rating">★★★★★ <span>(1.2k)</span></div>
+          <p class="text-body">I build unbreakable foundations.</p>
+        </div>
+      </div>
+      <div class="trainer-card">
+        <div class="trainer-card__photo">SR</div>
+        <div class="trainer-card__info">
+          <h3 class="text-title font-display">Sofia Reyes</h3>
+          <p class="text-label color-muted">HIIT & Cond</p>
+          <div class="trainer-card__rating">★★★★★ <span>(980)</span></div>
+          <p class="text-body">Prepare to sweat, prepare to work.</p>
+        </div>
+      </div>
+      <div class="trainer-card">
+        <div class="trainer-card__photo">JP</div>
+        <div class="trainer-card__info">
+          <h3 class="text-title font-display">Jordan Pierce</h3>
+          <p class="text-label color-muted">Athletics</p>
+          <div class="trainer-card__rating">★★★★★ <span>(2.1k)</span></div>
+          <p class="text-body">We train for the real world.</p>
+        </div>
+      </div>
+      <div class="trainer-card">
+        <div class="trainer-card__photo">AS</div>
+        <div class="trainer-card__info">
+          <h3 class="text-title font-display">Anika Sharma</h3>
+          <p class="text-label color-muted">Nutrition</p>
+          <div class="trainer-card__rating">★★★★★ <span>(850)</span></div>
+          <p class="text-body">Abs are engineered here.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="trainer-match-cta animate-on-scroll">
+      ⚡ Let APEX recommend your ideal coach
+    </div>
+  </section>
+
+  <!-- NUTRITION -->
+  <section id="nutrition" class="nutrition-section container split-layout">
+    <div class="animate-left">
+      <h2 class="text-headline mb-4">Fuel Your Performance</h2>
+      <p class="text-body color-muted mb-6" style="margin-bottom:var(--space-6);">Precision macros designed around your basal metabolic rate and training volume.</p>
+      
+      <div class="flex-col gap-4">
+        <div><h4 class="text-label color-red">PRECISION</h4><p class="text-small">Exact metabolic tracking.</p></div>
+        <div><h4 class="text-label color-red">TIMING</h4><p class="text-small">Strategic anabolic windows.</p></div>
+        <div><h4 class="text-label color-red">ADAPTATION</h4><p class="text-small">Weekly cycle adjustments.</p></div>
+      </div>
+    </div>
+
+    <div class="animate-right" style="background:var(--color-surface); padding:var(--space-6); border-radius:var(--radius-base); border:1px solid var(--color-border);">
+      <h3 class="text-title font-heading mb-4">Nutrition Calculator</h3>
+      <div style="display:flex; gap:10px; margin-bottom:10px;">
+        <input type="number" id="nut-age" placeholder="Age" style="width:100%; padding:10px; border:1px solid var(--color-chrome); color:var(--color-chrome);">
+        <input type="number" id="nut-weight" placeholder="Weight (kg)" style="width:100%; padding:10px; border:1px solid var(--color-chrome); color:var(--color-chrome);">
+      </div>
+      <button id="calc-nutrition-btn" class="btn-primary" style="width:100%; margin-top:20px;">Calculate with APEX</button>
+      
+      <div id="nutrition-results" style="margin-top:var(--space-6);"></div>
+    </div>
+  </section>
+
+  <!-- PROGRESS PREVIEW -->
+  <section id="progress" class="progress-section" style="padding-block:120px;">
+    <div class="hex-bg"></div>
+    <div class="container animate-on-scroll position-relative" style="z-index:2;">
+      <h2 class="text-headline text-center mb-8" style="margin-bottom:var(--space-8);">Track Every Rep.<br>Celebrate Every Win.</h2>
+      
+      <div class="grid-cols-3">
+        <div class="chart-preview">
+          <h4 class="text-label mb-4" style="margin-bottom:var(--space-4);">Strength Progress</h4>
+          <svg viewBox="0 0 100 50" style="width:100%; height:100px; stroke:var(--color-red); fill:none; stroke-width:2;">
+            <path d="M0,45 L20,40 L40,35 L60,20 L80,15 L100,5" style="stroke-dasharray:200; stroke-dashoffset:200; animation: ring-draw 2s forwards 0.5s;"/>
+          </svg>
+        </div>
+
+        <div class="chart-preview flex-center flex-col">
+          <h4 class="text-label mb-4">Weekly Goal</h4>
+          <svg viewBox="0 0 100 100" style="width:100px; height:100px;">
+            <circle cx="50" cy="50" r="45" fill="none" stroke="var(--color-surface-3)" stroke-width="10"/>
+            <circle cx="50" cy="50" r="45" fill="none" stroke="var(--color-green)" stroke-width="10" stroke-dasharray="283" stroke-dashoffset="60" style="transform:rotate(-90deg); transform-origin:center;"/>
+          </svg>
+        </div>
+
+        <div class="chart-preview">
+          <h4 class="text-label mb-4">Workout Streak</h4>
+          <div class="heat-map" id="workout-heatmap"></div>
+        </div>
+      </div>
+      
+      <div class="apex-insight">
+        🤖 APEX: "Based on your last 4 weeks, increase bench press by 5kg this week."
+      </div>
+      
+      <div class="flex-center" style="margin-top:var(--space-8);">
+        <a href="dashboard.html" class="btn-ghost">Start Tracking Free</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing" class="pricing container">
+    <div class="text-center animate-on-scroll" style="margin-bottom:var(--space-8); text-align:center;">
+      <p class="text-label color-red">MEMBERSHIP</p>
+      <h2 class="text-headline">Choose Your Weapon</h2>
+    </div>
+
+    <div class="pricing__toggle-wrapper animate-on-scroll">
+      <span>Monthly</span>
+      <div class="pricing__toggle"></div>
+      <span>Annual <span class="text-label color-red">(Save 20%)</span></span>
+    </div>
+
+    <div class="grid-cols-3 animate-on-scroll stagger-1" style="align-items:center;">
+      <div class="pricing-card">
+        <h3 class="text-title font-heading uppercase">Starter</h3>
+        <div class="pricing-card__price">$<span class="val" data-monthly="29">29</span><span>/mo</span></div>
+        <ul class="feature-list">
+          <li class="pro">✔ 24/7 Gym Access</li>
+          <li class="pro">✔ Basic App</li>
+          <li class="pro">✔ Community</li>
+          <li class="con">✘ AI Workouts</li>
+          <li class="con">✘ PT Sessions</li>
+        </ul>
+        <button class="btn-ghost">Select Plan</button>
+      </div>
+
+      <div class="pricing-card pricing-card--featured">
+        <div class="pricing-card__badge">MOST POPULAR</div>
+        <h3 class="text-title font-heading uppercase">Warrior</h3>
+        <div class="pricing-card__price">$<span class="val" data-monthly="59">59</span><span>/mo</span></div>
+        <ul class="feature-list">
+          <li class="pro color-red">✔ AI Workout Plans</li>
+          <li class="pro color-red">✔ Nutrition Tracking</li>
+          <li class="pro">✔ 24/7 Gym Access</li>
+          <li class="pro">✔ 2 PT Sessions</li>
+          <li class="con">✘ Recovery Suite</li>
+        </ul>
+        <button class="btn-primary">Become a Warrior</button>
+      </div>
+
+      <div class="pricing-card">
+        <h3 class="text-title font-heading uppercase">Elite</h3>
+        <div class="pricing-card__price">$<span class="val" data-monthly="99">99</span><span>/mo</span></div>
+        <ul class="feature-list">
+          <li class="pro color-green">✔ Unlimited PT</li>
+          <li class="pro color-green">✔ Custom APEX Agent</li>
+          <li class="pro">✔ Full Gym Access</li>
+          <li class="pro">✔ VIP Recovery Suite</li>
+          <li class="pro">✔ AI Nutrition</li>
+        </ul>
+        <button class="btn-ghost">Select Plan</button>
+      </div>
+    </div>
+    
+    <div class="flex-center" style="margin-top:var(--space-8);">
+      <button class="btn-ghost color-red" style="border-color:var(--color-red);" onclick="document.querySelector('.apex-fab').click()">Let APEX analyze your goals</button>
+    </div>
+
+    <div class="faq-accordion mt-16 animate-on-scroll">
+      <div class="faq-item">
+        <div class="faq-question">What is APEX? <span>+</span></div>
+        <div class="faq-answer">APEX is our proprietary AI that builds your workouts, tracks your nutrition, and adapts daily.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Is the gym really 24/7? <span>+</span></div>
+        <div class="faq-answer">Yes. Members get a secure NFC pass for around-the-clock access.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Can I cancel anytime? <span>+</span></div>
+        <div class="faq-answer">Monthly plans can be cancelled anytime. Annual plans require a 1-year commitment.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="testimonials container" style="max-width:100%; padding-inline:0;">
+    <h2 class="text-headline text-center mb-8 animate-on-scroll" style="margin-bottom:var(--space-6); text-align:center;">Real Results. Real People.</h2>
+    
+    <div class="marquee-track">
+      <div class="testimonial-card">
+        <div class="achievement-badge">Lost 28kg</div>
+        <p class="text-body mb-4" style="margin-bottom:var(--space-4);">"APEX forced me to stay accountable. I've never been stronger."</p>
+        <p class="font-mono text-small color-muted">— John D.</p>
+      </div>
+      <div class="testimonial-card">
+        <div class="achievement-badge">Added 40kg to Squat</div>
+        <p class="text-body mb-4" style="margin-bottom:var(--space-4);">"The FORGE program optimized my recovery. Absolute game changer."</p>
+        <p class="font-mono text-small color-muted">— Sarah M.</p>
+      </div>
+      <div class="testimonial-card">
+        <div class="achievement-badge">Ran First Marathon</div>
+        <p class="text-body mb-4" style="margin-bottom:var(--space-4);">"ENDURE protocol gave me stamina I didn't know I had."</p>
+        <p class="font-mono text-small color-muted">— Mark T.</p>
+      </div>
+      <!-- Duplicates for seamless loop -->
+      <div class="testimonial-card">
+        <div class="achievement-badge">Lost 28kg</div>
+        <p class="text-body mb-4" style="margin-bottom:var(--space-4);">"APEX forced me to stay accountable. I've never been stronger."</p>
+        <p class="font-mono text-small color-muted">— John D.</p>
+      </div>
+      <div class="testimonial-card">
+        <div class="achievement-badge">Added 40kg to Squat</div>
+        <p class="text-body mb-4" style="margin-bottom:var(--space-4);">"The FORGE program optimized my recovery. Absolute game changer."</p>
+        <p class="font-mono text-small color-muted">— Sarah M.</p>
+      </div>
+      <div class="testimonial-card">
+        <div class="achievement-badge">Ran First Marathon</div>
+        <p class="text-body mb-4" style="margin-bottom:var(--space-4);">"ENDURE protocol gave me stamina I didn't know I had."</p>
+        <p class="font-mono text-small color-muted">— Mark T.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FACILITIES -->
+  <section id="facilities" class="facilities container">
+    <div class="facility-grid animate-on-scroll scaleIn">
+      <div class="facility-item" style="aspect-ratio:3/4; background: linear-gradient(45deg, #1A1A1A, #2A2A2A)"><div class="facility-item__overlay"><div class="facility-item__label">Free Weights Zone</div></div></div>
+      <div class="facility-item" style="aspect-ratio:1; background: linear-gradient(-45deg, #222, #111)"><div class="facility-item__overlay"><div class="facility-item__label">Power Racks</div></div></div>
+      <div class="facility-item" style="aspect-ratio:16/9; background: linear-gradient(135deg, #151515, #000)"><div class="facility-item__overlay"><div class="facility-item__label">Cardio Floor</div></div></div>
+      <div class="facility-item" style="aspect-ratio:4/3; background: linear-gradient(to bottom, #2A2A2A, #0A0A0A)"><div class="facility-item__overlay"><div class="facility-item__label">Olympic Platforms</div></div></div>
+      <div class="facility-item" style="aspect-ratio:1; background: linear-gradient(to top, #1A1A1A, #333)"><div class="facility-item__overlay"><div class="facility-item__label">Recovery Suite</div></div></div>
+      <div class="facility-item" style="aspect-ratio:3/4; background: linear-gradient(45deg, #222, #000)"><div class="facility-item__overlay"><div class="facility-item__label">Members Lounge</div></div></div>
+    </div>
+  </section>
+
+  <!-- APP SECTION -->
+  <section id="app" class="app-section" style="background: linear-gradient(135deg, #110000 0%, #330000 100%);">
+    <div class="container split-layout">
+      <div class="animate-left">
+        <div style="width:250px; height:500px; border:4px solid var(--color-chrome); border-radius:30px; margin:0 auto; background:var(--color-void); padding:10px; position:relative;">
+          <div style="width:40%; height:20px; background:var(--color-chrome); position:absolute; top:0; left:30%; border-bottom-left-radius:10px; border-bottom-right-radius:10px;"></div>
+          <div style="margin-top:40px; padding:10px; background:var(--color-surface-2); border-radius:10px;"><p class="text-label color-red">APEX Dashboard</p><h4 class="text-subtitle font-heading mt-2">Workout Ready</h4></div>
+        </div>
+      </div>
+      <div class="animate-right">
+        <h2 class="text-headline">APEX In Your Pocket</h2>
+        <ul style="margin-block:var(--space-8); display:flex; flex-direction:column; gap:var(--space-4);">
+          <li class="text-body">✔ Offline Workouts</li>
+          <li class="text-body">✔ AI Coach Chat</li>
+          <li class="text-body">✔ Barcode Nutrition Scanner</li>
+          <li class="text-body">✔ Wearable Sync</li>
+        </ul>
+        <button class="btn-primary">Download App</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact container split-layout">
+    <div class="animate-left flex-col gap-6">
+      <h2 class="text-headline">Location & Details</h2>
+      
+      <div class="contact__map" style="background:#111; border:1px solid var(--color-red); width:100%; aspect-ratio:16/9; display:flex; align-items:center; justify-content:center;">
+        Map View
+      </div>
+
+      <table class="contact__hours-table" style="width:100%; font-family:var(--font-mono); font-size:var(--text-small);">
+        <tr><td>Mon</td><td>00:00 - 24:00</td></tr>
+        <tr><td>Tue</td><td>00:00 - 24:00</td></tr>
+        <tr><td>Wed</td><td>00:00 - 24:00</td></tr>
+        <tr><td>Thu</td><td>00:00 - 24:00</td></tr>
+        <tr><td>Fri</td><td>00:00 - 24:00</td></tr>
+        <tr><td>Sat</td><td>00:00 - 24:00</td></tr>
+        <tr><td>Sun</td><td>00:00 - 24:00</td></tr>
+      </table>
+    </div>
+
+    <div class="animate-right" style="background:var(--color-surface); padding:var(--space-8); border:1px solid var(--color-border); border-radius:var(--radius-base);">
+      <h3 class="text-title font-heading mb-4" style="margin-bottom:var(--space-6);">Contact Us</h3>
+      <form class="contact__form flex-col gap-4">
+        <input type="text" placeholder="Name" style="background:var(--color-void); padding:var(--space-3); border:1px solid var(--color-chrome); color:#fff; width:100%;">
+        <input type="email" placeholder="Email" style="background:var(--color-void); padding:var(--space-3); border:1px solid var(--color-chrome); color:#fff; width:100%;">
+        <textarea rows="4" placeholder="Message" style="background:var(--color-void); padding:var(--space-3); border:1px solid var(--color-chrome); color:#fff; width:100%; resize:none;"></textarea>
+        <button type="button" class="btn-primary" style="margin-top:var(--space-4);">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container split-layout" style="align-items:flex-start;">
+      <div style="flex:2;">
+        <div class="footer__logo">ANTI<span class="color-red">GRAVITY</span></div>
+        <p class="text-small color-muted mt-2">Defy Your Limits.</p>
+      </div>
+      
+      <div class="footer__links">
+        <h4>Programs</h4>
+        <a href="#">Forge</a>
+        <a href="#">Ignite</a>
+        <a href="#">Sculpt</a>
+      </div>
+      
+      <div class="footer__links">
+        <h4>Company</h4>
+        <a href="#">About</a>
+        <a href="#">Careers</a>
+        <a href="#">Contact</a>
+      </div>
+      
+      <div class="footer__newsletter" style="flex:2;">
+        <h4>Get APEX Tips Weekly</h4>
+        <div style="display:flex;">
+          <input type="email" placeholder="Enter email" style="background:var(--color-surface); border:1px solid var(--color-chrome); padding:8px; color:#fff; font-family:var(--font-mono); width:100%;">
+          <button class="btn-primary" style="padding:8px 16px;">Subscribe</button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container text-center" style="margin-top:var(--space-12); border-top:1px solid #222; padding-top:var(--space-4);">
+      <p class="text-label color-muted">© 2026 AntiGravity Gym. Powered by APEX AI.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+/* css/typography.css */
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  color: var(--color-chrome);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  line-height: 1.1;
+}
+
+.text-mega {
+  font-family: var(--font-display);
+  font-size: var(--text-mega);
+  line-height: 0.85;
+}
+
+.text-display {
+  font-family: var(--font-display);
+  font-size: var(--text-display);
+}
+
+.text-headline {
+  font-family: var(--font-heading);
+  font-size: var(--text-headline);
+  text-transform: uppercase;
+}
+
+.text-title {
+  font-family: var(--font-heading);
+  font-size: var(--text-title);
+  text-transform: uppercase;
+}
+
+.text-subtitle {
+  font-family: var(--font-heading);
+  font-size: var(--text-subtitle);
+}
+
+.text-body {
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+}
+
+.text-small {
+  font-family: var(--font-body);
+  font-size: var(--text-small);
+}
+
+.text-label {
+  font-family: var(--font-mono);
+  font-size: var(--text-label);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+.color-red { color: var(--color-red); }
+.color-chrome { color: var(--color-chrome); }
+.color-muted { color: var(--color-muted); }
+.color-green { color: var(--color-green); }
+
+.tracking-wide { letter-spacing: 0.05em; }
+.tracking-wider { letter-spacing: 0.1em; }
+.tracking-widest { letter-spacing: 0.2em; }

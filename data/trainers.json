@@ -1,0 +1,42 @@
+[
+  {
+    "id": "marcus-chen",
+    "name": "Marcus Chen",
+    "specialty": "Powerlifting & Strength",
+    "rating": 4.9,
+    "sessions": 1240,
+    "certs": ["CSCS", "USA Weightlifting L2", "B.S. Kinesiology"],
+    "bio": "Former competitive powerlifter obsessed with biomechanics. I build unbreakable foundations.",
+    "image": "photo_placeholder"
+  },
+  {
+    "id": "sofia-reyes",
+    "name": "Sofia Reyes",
+    "specialty": "HIIT & Conditioning",
+    "rating": 4.8,
+    "sessions": 980,
+    "certs": ["NASM-CPT", "CrossFit L1"],
+    "bio": "My sessions are designed to test your mental limits. Prepare to sweat, prepare to work.",
+    "image": "photo_placeholder"
+  },
+  {
+    "id": "jordan-pierce",
+    "name": "Jordan Pierce",
+    "specialty": "Athletic Performance",
+    "rating": 5.0,
+    "sessions": 2100,
+    "certs": ["EXOS Performance", "FMS L2"],
+    "bio": "I train athletes to jump higher, run faster, and move without pain. We train for the real world.",
+    "image": "photo_placeholder"
+  },
+  {
+    "id": "anika-sharma",
+    "name": "Anika Sharma",
+    "specialty": "Nutrition & Body Comp",
+    "rating": 4.9,
+    "sessions": 850,
+    "certs": ["Precision Nutrition L2", "Registered Dietitian"],
+    "bio": "Abs aren't just made in the kitchen, they're engineered. I bridge the gap between lifting and fueling.",
+    "image": "photo_placeholder"
+  }
+]

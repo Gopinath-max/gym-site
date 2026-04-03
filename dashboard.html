@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | AntiGravity</title>
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,700;1,400;1,700&family=Bebas+Neue&family=IBM+Plex+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,700;1,6..12,400;1,6..12,700&display=swap" rel="stylesheet">
+  <script type="module" src="js/dashboard.js" defer></script>
+</head>
+<body>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar__header">
+      <div class="sidebar__logo">ANTI<span>GRAVITY</span></div>
+    </div>
+    
+    <div class="sidebar__user">
+      <div class="sidebar__avatar">J</div>
+      <div>
+        <p class="font-heading uppercase text-body">John Doe</p>
+        <p class="font-mono text-label color-red">WARRIOR PLAN</p>
+      </div>
+    </div>
+
+    <nav class="sidebar__nav flex-col gap-2">
+      <a href="#" class="sidebar__link active" data-tab="dashboard">Dashboard</a>
+      <a href="#" class="sidebar__link" data-tab="workouts">My Workouts</a>
+      <a href="#" class="sidebar__link" data-tab="nutrition">Nutrition</a>
+      <a href="#" class="sidebar__link" data-tab="progress">Progress</a>
+      <a href="#" class="sidebar__link" data-tab="schedule">Schedule</a>
+    </nav>
+
+    <div class="sidebar__footer">
+      <button class="sidebar__talk-btn" data-tab="apex">⚡ Talk to APEX</button>
+      <a href="index.html" class="font-mono text-small color-muted">Log Out</a>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main-content">
+    <header class="main-header">
+      <h1 class="font-heading text-headline uppercase" id="view-title">Command Center</h1>
+      <div class="font-mono text-small color-muted">System Status: <span class="color-green">OPTIMAL</span></div>
+    </header>
+
+    <div class="dashboard-views-container">
+      
+      <!-- DASHBOARD VIEW -->
+      <section id="view-dashboard" class="dashboard-view active">
+        <div class="dashboard-grid">
+          <!-- W1: Today's Workout -->
+          <div class="widget widget-primary">
+            <h2 class="widget-title">Today's Protocol — FORGE (Day 23 of 84)</h2>
+            <div class="workout-preview">
+              <div class="workout-preview-head">
+                <span class="font-heading uppercase text-title color-chrome">Upper Power Builder</span>
+                <span class="font-mono text-small color-red">45 MIN</span>
+              </div>
+              <p class="workout-preview-list">1. Barbell Bench Press (5x5)<br>2. Weighted Pull-Ups (4x8)<br>3. Overhead Press (4x8)</p>
+            </div>
+            <button class="btn-primary" style="width:100%; border:none; padding:12px;">Initiate Sequence</button>
+          </div>
+
+          <!-- W2: APEX Brief -->
+          <div class="widget widget-brief">
+            <h2 class="widget-title">APEX Daily Briefing</h2>
+            <div class="apex-brief">
+              <p>> Recovery index High.</p>
+              <p>> Nutrition dialed in.</p>
+              <p>> "The iron doesn't care about your excuses. Move the weight."</p>
+            </div>
+          </div>
+
+          <!-- W3: Nutrition -->
+          <div class="widget widget-nutrition">
+            <h2 class="widget-title">Nutrition Target</h2>
+            <div class="flex-between">
+              <div style="width:100px; height:100px;">
+                <svg viewBox="0 0 100 100">
+                  <circle cx="50" cy="50" r="45" fill="none" stroke="var(--color-surface-3)" stroke-width="10"/>
+                  <circle cx="50" cy="50" r="45" fill="none" stroke="var(--color-red)" stroke-width="10" stroke-dasharray="283" stroke-dashoffset="80" style="transform:rotate(-90deg); transform-origin:center;"/>
+                </svg>
+              </div>
+              <div class="flex-col gap-2">
+                <p class="font-display text-title">2,140 / 2,800 <span class="text-small font-mono color-muted">KCAL</span></p>
+                <p class="font-mono text-label color-green">140G Protein / 180G Target</p>
+                <button class="btn-ghost" style="padding:4px 8px; font-size:10px;">Log Meal</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- W4: Stats -->
+          <div class="widget widget-stats">
+            <div class="stat-mini"><div class="stat-mini-val">12,400</div><div class="stat-mini-label">VOLUME (KG)</div></div>
+            <div class="stat-mini"><div class="stat-mini-val color-green">2</div><div class="stat-mini-label">NEW PRs</div></div>
+            <div class="stat-mini"><div class="stat-mini-val">4</div><div class="stat-mini-label">DAY STREAK</div></div>
+            <div class="stat-mini"><div class="stat-mini-val">82.5</div><div class="stat-mini-label">WEIGHT (KG)</div></div>
+          </div>
+
+          <!-- W5: Activity -->
+          <div class="widget widget-activity">
+            <h2 class="widget-title">Recent Logs</h2>
+            <div class="flex-col gap-2 font-mono text-small">
+              <div class="flex-between" style="border-bottom:1px solid var(--color-border); padding-bottom:8px;">
+                <span class="color-chrome">Lower Hypertrophy</span>
+                <span>Yesterday ✓</span>
+              </div>
+              <div class="flex-between" style="border-bottom:1px solid var(--color-border); padding-bottom:8px;">
+                <span class="color-chrome">Upper Power</span>
+                <span>2 Days Ago 🔥</span>
+              </div>
+              <div class="flex-between" style="border-bottom:1px solid var(--color-border); padding-bottom:8px;">
+                <span class="color-chrome">Rest Day / Active Recovery</span>
+                <span>3 Days Ago ⚡</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- W6: Schedule -->
+          <div class="widget widget-schedule">
+            <h2 class="widget-title">Upcoming Schedule</h2>
+            <div class="flex-col gap-4">
+              <div style="background:var(--color-surface-2); border-left:2px solid var(--color-red); padding:8px;">
+                <p class="font-heading uppercase">PT Session w/ Marcus</p>
+                <p class="font-mono text-label color-muted">Tomorrow @ 07:00 AM</p>
+              </div>
+              <button class="btn-ghost" style="width:100%;">Book Class</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WORKOUTS VIEW -->
+      <section id="view-workouts" class="dashboard-view">
+        <div class="widget" style="margin-bottom:var(--space-6);">
+          <h2 class="widget-title">Active Program: FORGE</h2>
+          <p class="mb-4 text-body color-muted">Week 4 of 12. You are currently in a high-volume block.</p>
+          <div class="grid-cols-3">
+            <div style="border:1px solid var(--color-border); padding:var(--space-4); border-radius:var(--radius-base);">
+              <h4 class="font-heading text-subtitle uppercase">Day 1: Upper Power</h4><p class="text-small color-muted font-mono mt-2 mb-4">Completed</p><button class="btn-ghost" style="width:100%;font-size:12px;">View Log</button>
+            </div>
+            <div style="border:1px solid var(--color-red); padding:var(--space-4); border-radius:var(--radius-base); background:var(--color-surface-2);">
+              <h4 class="font-heading text-subtitle uppercase">Day 2: Lower Power</h4><p class="text-small color-red font-mono mt-2 mb-4">Up Next</p><button class="btn-primary" style="width:100%;font-size:12px;">Start Now</button>
+            </div>
+            <div style="border:1px solid var(--color-border); padding:var(--space-4); border-radius:var(--radius-base);">
+              <h4 class="font-heading text-subtitle uppercase">Day 3: Rest</h4><p class="text-small color-muted font-mono mt-2 mb-4">Scheduled</p>
+            </div>
+          </div>
+        </div>
+        <div class="widget">
+           <h2 class="widget-title">Generate New Protocol</h2>
+           <p class="mb-4 text-body color-muted">Ready to switch things up? Use APEX to generate a new program.</p>
+           <button class="btn-ghost color-red" style="border-color:var(--color-red);">Initialize AI Generator</button>
+        </div>
+      </section>
+
+      <!-- NUTRITION VIEW -->
+      <section id="view-nutrition" class="dashboard-view">
+        <div class="grid-cols-2">
+          <div class="widget">
+            <h2 class="widget-title">Today's Meals</h2>
+            <div class="flex-col gap-4">
+              <div style="background:var(--color-surface-2); padding:16px; border-radius:var(--radius-base); border-left:2px solid var(--color-green);">
+                <span class="text-label">08:00</span>
+                <div class="font-heading text-subtitle">Oats & Whey</div>
+                <div class="font-mono text-muted mt-2" style="font-size:12px;">50C / 30P / 10F — 410 KCAL</div>
+              </div>
+              <div style="background:var(--color-surface-2); padding:16px; border-radius:var(--radius-base); border-left:2px solid var(--color-red);">
+                <span class="text-label">12:30</span>
+                <div class="font-heading text-subtitle">Chicken & Rice</div>
+                <div class="font-mono text-muted mt-2" style="font-size:12px;">60C / 40P / 15F — 535 KCAL</div>
+                <button class="btn-primary" style="margin-top:10px; padding:4px 8px; font-size:10px;">Log Now</button>
+              </div>
+            </div>
+            <button class="btn-ghost mt-6" style="width:100%; margin-top:20px;">+ Add Custom Meal</button>
+          </div>
+          <div class="widget">
+            <h2 class="widget-title">Generate Meal Plan</h2>
+            <p class="text-body color-muted mb-4">Have APEX calculate exact macros based on your current physical stats.</p>
+            
+            <div class="flex-col gap-4" style="margin-top:var(--space-6);">
+              <input type="number" id="dash-weight" placeholder="Current Weight (kg)" style="padding:10px; background:var(--color-surface-2); color:var(--color-chrome);">
+              <select style="padding:10px; background:var(--color-surface-2); color:var(--color-chrome);">
+                <option>Goal: Build Muscle</option>
+                <option>Goal: Lose Fat</option>
+                <option>Goal: Recomp</option>
+              </select>
+              <button class="btn-primary" style="width:100%; border:none;" onclick="alert('APEX logic connected (simulated)')">Generate Plan</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROGRESS VIEW -->
+      <section id="view-progress" class="dashboard-view">
+        <div class="widget" style="margin-bottom:var(--space-6);">
+          <h2 class="widget-title">Strength Metrics (Estimated 1RM)</h2>
+          <div style="background:var(--color-surface-2); height:300px; border-radius:var(--radius-base); display:flex; align-items:flex-end; justify-content:space-around; padding:var(--space-4);">
+            <!-- Mock bar chart -->
+            <div style="display:flex; flex-direction:column; align-items:center; gap:8px;">
+              <div style="width:40px; height:120px; background:var(--color-border); position:relative;"><div style="position:absolute; bottom:0; width:100%; height:100%; background:var(--color-red);"></div></div>
+              <span class="font-mono text-small">Bench (105kg)</span>
+            </div>
+            <div style="display:flex; flex-direction:column; align-items:center; gap:8px;">
+              <div style="width:40px; height:180px; background:var(--color-border); position:relative;"><div style="position:absolute; bottom:0; width:100%; height:100%; background:var(--color-red);"></div></div>
+              <span class="font-mono text-small">Squat (140kg)</span>
+            </div>
+            <div style="display:flex; flex-direction:column; align-items:center; gap:8px;">
+              <div style="width:40px; height:240px; background:var(--color-border); position:relative;"><div style="position:absolute; bottom:0; width:100%; height:100%; background:var(--color-red);"></div></div>
+              <span class="font-mono text-small">Deadlift (185kg)</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="widget">
+           <h2 class="widget-title">Volume Heatmap</h2>
+           <div class="heat-map" id="dash-heatmap" style="display:grid; grid-template-columns:repeat(14, 1fr); gap:4px; margin-top:var(--space-6);"></div>
+        </div>
+      </section>
+
+      <!-- SCHEDULE VIEW -->
+      <section id="view-schedule" class="dashboard-view">
+        <div class="widget">
+          <h2 class="widget-title">Your Appointments</h2>
+          <p class="text-body color-muted mb-6">Upcoming personal training sessions and group classes.</p>
+          <div class="flex-col gap-4">
+             <div style="padding:16px; border:1px solid var(--color-red); border-radius:var(--radius-base);">
+               <h4 class="font-heading text-subtitle text-title">Tomorrow, 07:00 AM</h4>
+               <p class="font-mono text-muted text-small mt-2">1-on-1 PT with Marcus Chen (Powerlifting Focus)</p>
+             </div>
+             <div style="padding:16px; border:1px solid var(--color-border); border-radius:var(--radius-base);">
+               <h4 class="font-heading text-subtitle text-title">Friday, 06:00 PM</h4>
+               <p class="font-mono text-muted text-small mt-2">IGNITE Class — Metabolic Conditioning Room</p>
+             </div>
+          </div>
+          <button class="btn-primary mt-6" style="margin-top:var(--space-6);">Book New Session</button>
+        </div>
+      </section>
+
+      <!-- APEX CHAT VIEW (FULL PAGE) -->
+      <section id="view-apex" class="dashboard-view" style="height: calc(100vh - 120px); display:none; flex-direction:column;">
+        <div class="widget" style="flex:1; display:flex; flex-direction:column; padding:0; overflow:hidden;">
+          <div style="background:var(--color-red); padding:var(--space-4); display:flex; justify-content:space-between; align-items:center;">
+             <div>
+               <h2 class="font-mono text-title" style="color:#fff; margin:0; font-size:18px;">APEX // DIRECT LINK</h2>
+               <p class="font-mono" style="color:var(--color-chrome); font-size:10px; margin-top:4px;">Secure internal network</p>
+             </div>
+             <div class="apex-teaser__pulse" style="background:#fff;"></div>
+          </div>
+          
+          <div class="chat-messages" id="dash-apex-messages" style="flex:1; padding:var(--space-6); background:var(--color-surface); overflow-y:auto; display:flex; flex-direction:column; gap:var(--space-4);">
+             <!-- Initial messages inserted by JS -->
+          </div>
+          
+          <div class="chat-input-row" style="padding:var(--space-4); background:var(--color-surface-2);">
+            <div style="display:flex; width:100%; max-width:800px; margin:0 auto; border:1px solid var(--color-border); border-radius:var(--radius-pill); overflow:hidden; background:var(--color-void);">
+              <input type="text" id="dash-apex-input" placeholder="Initiate protocol inquiry..." style="flex:1; padding:12px 20px; font-family:var(--font-mono); font-size:14px; border:none; outline:none; background:transparent; color:#fff;">
+              <button id="dash-apex-send" style="width:60px; background:var(--color-red); border:none; display:flex; align-items:center; justify-content:center; cursor:pointer;"><svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+</body>
+</html>

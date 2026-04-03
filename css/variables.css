@@ -1,0 +1,84 @@
+/* css/variables.css */
+:root {
+  /* COLOR SYSTEM */
+  --color-void: #080808;
+  --color-surface: #111111;
+  --color-surface-2: #1A1A1A;
+  --color-surface-3: #242424;
+  --color-border: #2A2A2A;
+  --color-border-active: #FF2D2D;
+  --color-red: #FF2D2D;
+  --color-red-dim: #CC0000;
+  --color-red-glow: rgba(255, 45, 45, 0.15);
+  --color-green: #00FF88;
+  --color-green-dim: rgba(0, 255, 136, 0.1);
+  --color-chrome: #E8E8E8;
+  --color-muted: #666666;
+  --color-faint: #333333;
+  --color-overlay: rgba(8, 8, 8, 0.92);
+
+  /* TYPOGRAPHY */
+  --font-display: 'Bebas Neue', display;
+  --font-heading: 'Barlow Condensed', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+  --font-body: 'Nunito Sans', sans-serif;
+
+  /* FLUID TYPE SCALE */
+  --text-mega: clamp(80px, 15vw, 200px);
+  --text-display: clamp(48px, 8vw, 96px);
+  --text-headline: clamp(32px, 5vw, 64px);
+  --text-title: clamp(24px, 3vw, 36px);
+  --text-subtitle: clamp(18px, 2vw, 24px);
+  --text-body: clamp(14px, 1.5vw, 16px);
+  --text-small: clamp(11px, 1vw, 13px);
+  --text-label: clamp(10px, 0.8vw, 11px);
+
+  /* SPACING SCALE */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+
+  /* LAYOUT VARS */
+  --section-padding: clamp(60px, 10vw, 120px);
+  --container-max: 1280px;
+  --container-pad: 24px;
+
+  /* EFFECTS */
+  --shadow-red: 0 0 30px rgba(255, 45, 45, 0.3);
+  --shadow-green: 0 0 20px rgba(0, 255, 136, 0.2);
+  --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.6);
+  --shadow-float: 0 20px 60px rgba(0, 0, 0, 0.8);
+  --blur-glass: blur(20px);
+  
+  --radius-sharp: 2px;
+  --radius-base: 6px;
+  --radius-lg: 12px;
+  --radius-pill: 100px;
+
+  /* TRANSITIONS */
+  --ease-snap: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+  --duration-fast: 150ms;
+  --duration-base: 300ms;
+  --duration-slow: 600ms;
+  --duration-crawl: 1000ms;
+
+  /* Z-INDEX SCALE */
+  --z-base: 1;
+  --z-raised: 10;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-overlay: 300;
+  --z-modal: 400;
+  --z-toast: 500;
+  --z-cursor: 9999;
+}

@@ -1,0 +1,154 @@
+[
+  {
+    "id": "forge",
+    "name": "FORGE",
+    "subtitle": "Strength & Powerlifting",
+    "intensity": "high",
+    "duration_weeks": 12,
+    "sessions_per_week": 4,
+    "focus": ["chest", "back", "legs", "shoulders"],
+    "equipment": ["barbell", "rack", "cable", "dumbbells"],
+    "description": "A pure strength protocol utilizing periodization to increase your big three lifts.",
+    "ideal_for": "Intermediate lifters looking to push PRs.",
+    "sample_week": {
+      "monday": { 
+        "name": "Upper Power", 
+        "exercises": [
+          {"name": "Barbell Bench Press", "sets": 5, "reps": "3-5"},
+          {"name": "Weighted Pull-Ups", "sets": 4, "reps": "5-8"},
+          {"name": "Overhead Press", "sets": 4, "reps": "6-8"},
+          {"name": "Barbell Row", "sets": 4, "reps": "6-8"}
+        ] 
+      },
+      "tuesday": { 
+        "name": "Lower Power", 
+        "exercises": [
+          {"name": "Barbell Back Squat", "sets": 5, "reps": "3-5"},
+          {"name": "Romanian Deadlift", "sets": 4, "reps": "6-8"},
+          {"name": "Leg Press", "sets": 3, "reps": "8-10"},
+          {"name": "Calf Raises", "sets": 4, "reps": "15"}
+        ] 
+      },
+      "thursday": { 
+        "name": "Upper Hypertrophy", 
+        "exercises": [
+          {"name": "Incline Dumbbell Press", "sets": 4, "reps": "8-12"},
+          {"name": "Lat Pulldown", "sets": 4, "reps": "10-12"},
+          {"name": "Lateral Raises", "sets": 4, "reps": "12-15"},
+          {"name": "Triceps Pushdown", "sets": 3, "reps": "12-15"}
+        ] 
+      },
+      "friday": { 
+        "name": "Lower Hypertrophy", 
+        "exercises": [
+          {"name": "Deadlift", "sets": 3, "reps": "5"},
+          {"name": "Hack Squat", "sets": 3, "reps": "10-12"},
+          {"name": "Leg Extensions", "sets": 3, "reps": "15"},
+          {"name": "Leg Curls", "sets": 3, "reps": "15"}
+        ] 
+      }
+    },
+    "progression_model": "linear",
+    "apex_note": "Volume increases weekly leading up to a 1RM test week. Prioritize sleep for central nervous system recovery."
+  },
+  {
+    "id": "ignite",
+    "name": "IGNITE",
+    "subtitle": "HIIT & Metabolic Conditioning",
+    "intensity": "high",
+    "duration_weeks": 8,
+    "sessions_per_week": 5,
+    "focus": ["full body", "cardio", "core"],
+    "equipment": ["kettlebells", "dumbbells", "bodyweight"],
+    "description": "High-intensity intervals designed to maximize calorie burn and metabolic adaptation.",
+    "ideal_for": "Fat loss and cardiovascular endurance.",
+    "sample_week": {
+      "monday": { "name": "Full Body Metcon", "exercises": [{"name": "Kettlebell Swings", "sets": 5, "reps": "20"}, {"name": "Burpees", "sets": 5, "reps": "15"}] },
+      "tuesday": { "name": "Sprint Intervals", "exercises": [{"name": "Treadmill Sprints", "sets": 10, "reps": "30s"}] },
+      "wednesday": { "name": "Active Recovery", "exercises": [{"name": "Light Rowing", "sets": 1, "reps": "20m"}] },
+      "thursday": { "name": "Upper Body HIIT", "exercises": [{"name": "Pushup to Renegade Row", "sets": 4, "reps": "10"}] },
+      "friday": { "name": "Leg Burner", "exercises": [{"name": "Jump Squats", "sets": 5, "reps": "20"}] }
+    },
+    "progression_model": "undulating",
+    "apex_note": "Keep rest periods strictly to 45 seconds to maintain heart rate zone 4."
+  },
+  {
+    "id": "sculpt",
+    "name": "SCULPT",
+    "subtitle": "Body Recomposition",
+    "intensity": "medium",
+    "duration_weeks": 12,
+    "sessions_per_week": 4,
+    "focus": ["hypertrophy", "isolation"],
+    "equipment": ["machines", "dumbbells", "cables"],
+    "description": "Standard bodybuilding split focused on muscle mind connection.",
+    "ideal_for": "Building aesthetic muscle tone.",
+    "sample_week": {
+      "monday": { "name": "Push", "exercises": [{"name": "DB Press", "sets": 4, "reps": "10"}] },
+      "tuesday": { "name": "Pull", "exercises": [{"name": "Cable Row", "sets": 4, "reps": "12"}] },
+      "thursday": { "name": "Legs", "exercises": [{"name": "Leg Press", "sets": 4, "reps": "15"}] },
+      "friday": { "name": "Arms & Shoulders", "exercises": [{"name": "Bicep Curls", "sets": 4, "reps": "12"}] }
+    },
+    "progression_model": "linear",
+    "apex_note": "Focus on eccentric control and time under tension."
+  },
+  {
+    "id": "endure",
+    "name": "ENDURE",
+    "subtitle": "Athletic Performance",
+    "intensity": "high",
+    "duration_weeks": 10,
+    "sessions_per_week": 5,
+    "focus": ["stamina", "explosiveness", "agility"],
+    "equipment": ["plyo boxes", "sled", "track"],
+    "description": "Train like a hybrid athlete.",
+    "ideal_for": "Athletes and marathon preppers.",
+    "sample_week": {
+      "monday": { "name": "Track Work", "exercises": [{"name": "400m Repeats", "sets": 6, "reps": "1"}] },
+      "tuesday": { "name": "Explosive Legs", "exercises": [{"name": "Box Jumps", "sets": 5, "reps": "5"}] },
+      "thursday": { "name": "Long Run", "exercises": [{"name": "Steady Pace", "sets": 1, "reps": "60m"}] },
+      "friday": { "name": "Core & Stability", "exercises": [{"name": "Plank Variations", "sets": 4, "reps": "60s"}] }
+    },
+    "progression_model": "block",
+    "apex_note": "Hydration protocols are critical for these stamina demands."
+  },
+  {
+    "id": "elevate",
+    "name": "ELEVATE",
+    "subtitle": "Functional Fitness",
+    "intensity": "medium",
+    "duration_weeks": 12,
+    "sessions_per_week": 4,
+    "focus": ["mobility", "strength", "balance"],
+    "equipment": ["kettlebells", "sandbags", "pullup rig"],
+    "description": "Functional patterns for real world strength.",
+    "ideal_for": "General fitness and longevity.",
+    "sample_week": {
+      "monday": { "name": "Hinge & Push", "exercises": [{"name": "KB Deadlift", "sets": 4, "reps": "10"}] },
+      "tuesday": { "name": "Squat & Pull", "exercises": [{"name": "Goblet Squat", "sets": 4, "reps": "12"}] },
+      "thursday": { "name": "Carries", "exercises": [{"name": "Farmer's Walk", "sets": 5, "reps": "40m"}] },
+      "friday": { "name": "Functional Circuit", "exercises": [{"name": "Sandbag Over Shoulder", "sets": 4, "reps": "8"}] }
+    },
+    "progression_model": "undulating",
+    "apex_note": "Master the movement patterns before adding heavy loads."
+  },
+  {
+    "id": "restore",
+    "name": "RESTORE",
+    "subtitle": "Mobility & Recovery",
+    "intensity": "low",
+    "duration_weeks": 4,
+    "sessions_per_week": 3,
+    "focus": ["flexibility", "core", "joint health"],
+    "equipment": ["mat", "foam roller", "bands"],
+    "description": "Active recovery to heal joints and improve flexibility.",
+    "ideal_for": "Post-injury or deload phases.",
+    "sample_week": {
+      "monday": { "name": "Spinal Flow", "exercises": [{"name": "Cat-Cow", "sets": 3, "reps": "15"}] },
+      "wednesday": { "name": "Hip Openers", "exercises": [{"name": "Pigeon Pose", "sets": 3, "reps": "60s"}] },
+      "friday": { "name": "Shoulder Health", "exercises": [{"name": "Band Dislocates", "sets": 3, "reps": "15"}] }
+    },
+    "progression_model": "linear",
+    "apex_note": "Breathe deeply into the stretches. Do not force range of motion."
+  }
+]
